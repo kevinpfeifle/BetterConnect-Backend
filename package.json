@@ -1,0 +1,25 @@
+{
+  "name": "betterconnect-backend",
+  "version": "1.0.0",
+  "description": "The BetterConnect backend layer for the adminitrator portal and redirection service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinpfeifle/BetterConnect-Backend.git"
+  },
+  "author": "Kevin Pfeifle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinpfeifle/BetterConnect-Backend/issues"
+  },
+  "homepage": "https://github.com/kevinpfeifle/BetterConnect-Backend#readme",
+  "dependencies": {
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  }
+}

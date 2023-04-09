@@ -1,0 +1,15 @@
+{
+    "dbConfig": {
+        "user": "change",
+        "host": "change",
+        "password": "change",
+        "port": "change"
+    },
+    "expressServer": {
+        "port": 4000
+    },
+    "client": {
+        "host": "http://localhost",
+        "port": "3000"
+    }
+}
