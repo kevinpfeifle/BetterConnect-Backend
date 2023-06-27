@@ -26,8 +26,8 @@ router.get('/', (req, res) => {
         'message': 'Access denied',
         'data': []
     };
-    if (req.query != null && req.query.cardid != null) {
-        redirectModels.getRedirectionForCardId(req.query.cardid).then((results) => {
+    if (req.query != null && req.query.cardId != null) {
+        redirectModels.getRedirectionForCardId(req.query.cardId).then((results) => {
             if (results != null) {
                 let redirectURL = formatRedirectionURL(results);
                 resJson.status = 'success';
@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
                 res.status(200).json(resJson);
             } else {
                 // No Data.
-                resJson.message = 'No redirection exists, for cardid ' + req.query.cardid;
+                resJson.message = 'No redirection exists, for cardId ' + req.query.cardId;
                 res.status(404).send(resJson);
             }
         }).catch((err) => {
