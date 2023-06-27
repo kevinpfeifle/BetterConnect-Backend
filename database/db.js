@@ -5,14 +5,13 @@ let pool;
 
 /**
  * Initializes the DB connection pool.
- * @param {Object} dbConfig 
  */
-function init(dbConfig) {
+function init() {
     pool = mysql.createPool({
-        host: dbConfig.host,
-        port: dbConfig.port,
-        user: dbConfig.user,
-        password: dbConfig.password,
+        host: process.env.DB_HOST,
+        port: process.env.DB_PORT,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASS,
         waitForConnections: true,
         connectionLimit: 10,
         maxIdle: 10,
